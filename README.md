@@ -3,8 +3,8 @@
 A little maze game built with the [Pyxel](https://github.com/kitao/pyxel) game engine.
 
 <p align="middle">
-<img src="./public/lights_on.png" width="200">
-<img src="./public/lights_off.png" width="200">
+<img src="./public/lights_on.png" width="250">
+<img src="./public/lights_off.png" width="250">
 </p>
 
 Mazes are generated using the following algorithms:
@@ -110,4 +110,4 @@ I wanted to reproduce the same look and feel of the maze game in the homepage of
 
 I also want to thank [antigones](https://github.com/antigones/pymazes) and [Jamis Buck](http://www.mazesforprogrammers.com/) for the maze generation algorithms implemented in this game.
 
-Finally, a big thanks go to [Kitato](https://github.com/kitao) for crafting the beautiful and simple game engine [Pyxel](https://github.com/kitao/pyxel).
+Finally, a big thanks go to [Kitato](https://github.com/kitao) for crafting the beautiful and simple [Pyxel](https://github.com/kitao/pyxel) game engine.
