@@ -72,6 +72,9 @@ Colors and keys can be customized by editing the `settings.py` file.
 - `COL_LIGHT_3`: `int`<br>
   Outermost light color.
 
+- `COL_TEXT`: `int`<br>
+  Text color.
+
 ## Screen
 
 - `SIZE`: `int`<br>
@@ -95,6 +98,9 @@ Colors and keys can be customized by editing the `settings.py` file.
   Key to switch maze generator.<br>
   **Note**: the switch will affect future maze generations.
 
+- `KEY_SHOW_SCORE`: `int`<br>
+  Key to toggle score (number of completed mazes).
+
 ## Gameplay
 
 - `SHOW_WALL`: `bool`<br>
@@ -103,6 +109,9 @@ Colors and keys can be customized by editing the `settings.py` file.
 
 - `SHOW_LIGHT`: `bool`<br>
   Whether light should be displayed.
+
+- `SHOW_SCORE`: `bool`<br>
+  Whether to display score (number of completed mazes) by default.
 
 # Acknowledgements
 
