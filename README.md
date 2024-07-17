@@ -9,7 +9,7 @@ A little maze game built with the [Pyxel](https://github.com/kitao/pyxel) game e
 
 Mazes are generated using the following algorithms:
 
-- Binary tree (with random NW, NE, SW and SW bias).
+- Binary tree (with random NW, NE, SW and SE bias).
 
 - More to come...
 
