@@ -1,7 +1,7 @@
 from enum import Enum
 from random import randint
 
-from generators import BinaryTreeGenerator, GeneratorSwitcher
+from generators import GeneratorSwitcher
 import pyxel
 
 import settings
@@ -13,6 +13,7 @@ class Level:
     generator_switcher: GeneratorSwitcher = GeneratorSwitcher()
     finish: list[int]
     size: int
+    _show_score: bool = settings.SHOW_SCORE
 
     class Block(Enum):
         NONE = 0
@@ -76,7 +77,6 @@ class Level:
         for i in range(self.size):
             for j in range(self.size):
                 block = self._block_at_index(self.size * j + i)
-                # print(self.w * i + j, block_type)
                 match block:
                     case Level.Block.WALL:
                         pyxel.pset(
@@ -90,8 +90,13 @@ class Level:
                         pyxel.pset(i, j, settings.COL_FINISH)
                     case _:
                         pass
-                        # pyxel.pset(i, j, 3)
-        # pyxel.quit()
+
+        if self._show_score:
+            pyxel.text(1, 1, str(self.completed_levels), settings.COL_TEXT)
+
+    def input(self):
+        if pyxel.btnp(settings.KEY_SHOW_SCORE):
+            self._show_score = not self._show_score
 
     def is_wall(self, x: int, y: int) -> bool:
         block = self._block_at(x, y)
@@ -105,4 +110,5 @@ class Level:
         return self._randomize()
 
     def update(self):
+        self.input()
         self.generator_switcher.update()
