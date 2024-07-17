@@ -1,0 +1,24 @@
+import pyxel
+
+# Colors
+COL_BACKGROUND = 0
+COL_WALL = 5
+COL_FINISH = 14
+COL_PLAYER = 8
+COL_LIGHT_1 = 9
+COL_LIGHT_2 = 10
+COL_LIGHT_3 = 7
+
+# Screen size
+SIZE = 51
+
+# Controls
+KEY_CONTROL_UP = pyxel.KEY_W
+KEY_CONTROL_RIGHT = pyxel.KEY_D
+KEY_CONTROL_DOWN = pyxel.KEY_S
+KEY_CONTROL_LEFT = pyxel.KEY_A
+KEY_SWITCH_GENERATOR = pyxel.KEY_G
+
+# Gameplay
+SHOW_WALL = True
+SHOW_LIGHT = False
